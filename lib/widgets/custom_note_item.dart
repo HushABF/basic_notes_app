@@ -9,7 +9,7 @@ class NoteItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-         Navigator.push(
+        Navigator.push(
           context,
           MaterialPageRoute(
             builder: (context) {
@@ -20,7 +20,7 @@ class NoteItem extends StatelessWidget {
       },
       child: Container(
         padding: const EdgeInsets.only(left: 16, top: 16, bottom: 16),
-        margin: const EdgeInsets.only(left: 16, right: 16, bottom: 8),
+        margin: const EdgeInsets.symmetric(vertical: 8),
         decoration: BoxDecoration(
           color: Colors.orangeAccent,
           borderRadius: BorderRadius.circular(16),
