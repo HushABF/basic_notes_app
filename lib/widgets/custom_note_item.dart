@@ -23,7 +23,7 @@ class NoteItem extends StatelessWidget {
         padding: const EdgeInsets.only(left: 16, top: 16, bottom: 16),
         margin: const EdgeInsets.symmetric(vertical: 8),
         decoration: BoxDecoration(
-          color: Colors.orangeAccent,
+          color: Color(noteModel.color),
           borderRadius: BorderRadius.circular(16),
         ),
         child: Column(
@@ -31,15 +31,15 @@ class NoteItem extends StatelessWidget {
           children: [
             ListTile(
               contentPadding: EdgeInsets.zero,
-              title:  Text(
+              title: Text(
                 noteModel.title,
-                style: TextStyle(color: Colors.black, fontSize: 26),
+                style: const TextStyle(color: Colors.black, fontSize: 26),
               ),
-              subtitle:  Padding(
-                padding: EdgeInsets.only(top: 16.0, bottom: 16),
+              subtitle: Padding(
+                padding: const EdgeInsets.only(top: 16.0, bottom: 16),
                 child: Text(
                   noteModel.subTitle,
-                  style: TextStyle(color: Colors.black26, fontSize: 18),
+                  style: const TextStyle(color: Colors.black26, fontSize: 18),
                 ),
               ),
               trailing: IconButton(
@@ -51,11 +51,11 @@ class NoteItem extends StatelessWidget {
                 ),
               ),
             ),
-             Padding(
-              padding: EdgeInsets.only(right: 16.0),
+            Padding(
+              padding: const EdgeInsets.only(right: 16.0),
               child: Text(
                 noteModel.date,
-                style: TextStyle(color: Colors.black26, fontSize: 12),
+                style: const TextStyle(color: Colors.black26, fontSize: 12),
               ),
             ),
           ],
